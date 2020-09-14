@@ -42,7 +42,7 @@ export class Contracts {
     const setProvider = (contract, address) => {
       contract.setProvider(provider)
       if (address) contract.options.address = address
-      else console.error('Contract address not found in network', networkId)
+      else console.error('Contract address not found in network,address', networkId,address)
     }
 
     setProvider(this.sushi, contractAddresses.sushi[networkId])
